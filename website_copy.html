@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            transform: scale(0.7);
+            /* display: flex; */
+        }
+
+        div {
+            display: block;
+        }
+        
+        .first {
+            height: 100vw;
+            display: flex;
+        }
+
+        .second {
+            height: 100vw;
+            width: 90vw;
+        }
+
+        .third, .forth, .fifth {
+            height: 120vw;
+            margin: 0;
+            width: 90vw;
+        }
+
+        .one {
+            height: 40vw;
+            transform: scaleY(-1);
+            margin-left: 20vw;
+        }
+
+        .three {
+            height: 50vw; 
+            animation: move-sideways 3s infinite alternate ease-in-out;
+            margin-left: 10vw;
+        }
+
+        @keyframes move-sideways {
+            from {
+                transform: translateX(0) rotateZ(90deg);
+            }
+            to {
+                transform: translateX(30vw) rotateZ(90deg);
+            }
+        }
+
+        #four {
+            transform: translate(10vw, 0vw) scale(0.6);
+        }
+
+        #five {
+            /* position: absolute; */
+            animation: move-up 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes move-up {
+            from {
+                transform: translate(20vw, 0vw);
+            }
+            to {
+                transform: translate(20vw, -50vw);
+            }
+        }
+
+        #six {
+            transform: translate(30vw, 0vw) rotateZ(-90deg);
+        }
+
+        #seven {
+            transform: translateX(25vw);
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="first">
+            <marquee class="clothes" behavior="alternate" direction="down" scrollamount="11">
+                <img class="one" src="clothes/1.png" alt="">
+             </marquee>
+            <img src="clothes/2.png" alt="" style="height: 75vw; margin-top: 15vw; position: relative; bottom: 0px;">
+        </div>
+
+        <div class="second">
+            <img src="clothes/3.png" alt="" class="three">
+        </div>
+
+        <div class="third">
+            <img src="clothes/4.png" alt="" id="four">
+            <img src="clothes/5.png" alt="" id="five">
+            <img src="clothes/6.png" alt="" id="six">
+            <img src="clothes/7.png" alt="" id="seven">
+        </div>
+
+        <div class="forth">
+            
+        </div>
+
+        <div class="fifth">
+            
+        </div>
+    </div>
+</body>
+</html>
