@@ -1,0 +1,28 @@
+html {
+    background: lime;
+}
+
+.back {
+    position: absolute;
+}
+
+.container {
+    box-sizing: border-box;
+    display: flex;
+    background: linear-gradient(lime, navy);
+    height: 100vh;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+.inner_container {
+    height: 100%;
+    border: 1px solid olivedrab;
+    overflow-y: scroll;
+    max-width: 50%;
+    text-align: center;
+}
+ 
+img {
+    max-width: 70%;
+}

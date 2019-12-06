@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- подключение файлов для сброса стилей -->
+  <!-- <link rel="stylesheet" href="normalize.css"> -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <input type="text" class="js-input">
+  <div class="header">
+      <h1>大きいMAG</h1>
+  </div>
+
+  <img src="assets/mlp/1.jpg" alt="">
+  <img src="assets/mlp/2.jpg" alt="">
+  <img src="assets/mlp/3.jpg" alt="">
+  <img src="assets/mlp/4.jpg" alt="">
+  <img src="assets/mlp/5.jpg" alt="">
+
+  <div class="container">
+
+  </div>
+
+  <div class="other-container">
+  </div>
+
+  <script>
+      let header = document.querySelector('.header h1');
+      console.log(header);
+      console.log(header.innerHTML);    
+      let input = document.querySelector('.js-input');
+
+      document.addEventListener('keydown', function(){
+        header.innerHTML = (Math.floor(Math.random()*20));
+      });
+
+      document.addEventListener('keyup', function() {
+          square.style = `transform: translateY(${squarePosition}px);`;
+      })
+      let square = document.querySelector('.other-container');
+      let squrePosition = 0;
+  </script>
+</body>
+</html>
